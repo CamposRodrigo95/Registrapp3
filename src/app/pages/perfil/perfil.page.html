@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+       
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Pronostico clima</ion-title>
+    <ion-icon slot="start" name="logo-octocat"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <h2>Mi Perfil</h2>
+      <ion-item>
+        <ion-label>Nombre: </ion-label>
+        <ion-label>{{alumno.nombre}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Correo: </ion-label>
+        <ion-label>{{alumno.correo}}</ion-label>
+      </ion-item>          
+    </ion-card-content>
+    <br>
+    <ion-button [routerLink]="['/perfilactualizar', alumno.id]">Editar    
+    </ion-button>
+    <ion-button (click)="cerrarSesion()">
+      Cerrar sesion
+    </ion-button>
+  </ion-card>
+</ion-content>

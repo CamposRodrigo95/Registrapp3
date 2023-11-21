@@ -1,0 +1,22 @@
+{
+  "alumnos": [    
+    {
+      "id": 2,
+      "nombre": "Antonia",
+      "correo": "an@duoc.cl",
+      "password": "123456"
+    },
+    {
+      "nombre": "pedro",
+      "correo": "pe@duoc.cl",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "id": 6,
+      "nombre": "Rodrigo",
+      "correo": "ro@duoc.cl",
+      "password": "123456"
+    }
+  ]
+}

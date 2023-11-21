@@ -1,0 +1,25 @@
+.fondo{
+  --ion-background-color:white;
+  text-align: center;    
+}
+div{
+  color: black;
+}
+ion-toolbar {
+  --background: #ffffff;    
+  --border-style: solid;    
+  --color: black;
+  --min-height: 56px;
+  --opacity: 1;
+  --padding-bottom: 4px;
+  --padding-end: 4px;
+  --padding-start: 4px;
+  --padding-top: 4px;
+}
+
+ion-button{
+  --background: pink;
+--background-hover: pink;
+--background-activated: pink;
+--background-focused: pink;
+}

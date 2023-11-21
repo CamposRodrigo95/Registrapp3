@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+       
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Pronostico clima</ion-title>
+    <ion-icon slot="start" name="logo-octocat"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo">
+  <div class="container" style="background-color: white;">
+   <ion-button (click)="readBarcode()" expand="block" fill="clear" shape="round">
+      Leer QR
+    </ion-button>
+    <p>texto qr: {{qrText}}</p>
+  </div>
+  <h2 style="color: black;">Escanear QR para marcar asistencia</h2>
+  
+  <ion-button (click)="cerrarSesion()" >Cerrar Sesión</ion-button>
+
+</ion-content>

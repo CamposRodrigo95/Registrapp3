@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>perfilactualizar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Actualizar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<form>
+  <ion-item>
+    <ion-label>Nombre: </ion-label>
+    <ion-input type="text" name="txtNombre" [(ngModel)]="alumno.nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Correo: </ion-label>
+    <ion-input type="email" name="txtCorreo" [(ngModel)]="alumno.correo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Password: </ion-label>
+    <ion-input type="password" name="txtPassword" [(ngModel)]="alumno.password"></ion-input>
+  </ion-item>
+  <ion-row>
+    <ion-col>
+      <ion-button (click)="ActualizarUsuario()" expand="block" fill="clear" shape="round">
+        Actualizar
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</form>
+</ion-content>
